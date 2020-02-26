@@ -4,7 +4,6 @@
 
 // package 
 #include <iostream>
-#include <iomanip> // per usare setw e setfill
 #include "ip_func.h"
 // dichiatazione di costanti
 // #define NOME_COST VAL
@@ -14,13 +13,6 @@
 // int x = ?
 
 using namespace std;
-
-
-// funzione che valida indirizzo IP nel formato classico
-bool valid_ip(string ip) {
-    
-    return false;
-}
 
 
 int main() {
