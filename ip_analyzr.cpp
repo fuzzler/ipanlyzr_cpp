@@ -40,9 +40,24 @@ int main() {
 		while(cin.fail() || !(valid_ip(ip)) ) {
 			cin.clear();
 			cout << "\nERRORE nell'inserimento dell'IP!\nInserisci IP valido: ";
+			cin >> ip;
+			fflush(stdin);
 		}
 
+		//cout << "L'IP inserito " << ip << " è valido!\n";
 		
+		cout << "Inserisci la subnet mask.\nPuoi scegliere uno di questi formati:\n";
+		cout << "*) Numerico (Es. /24 )\n*) IPv4 (Es. 255.255.255.192)\n";
+
+		cin >> sm;
+
+		if(sm[0] == '/') {
+			// verifica che dopo / ci sia un numero e traduci
+		}
+		else {
+			// verifico che la stringa in formato IPv4 sia effettivamente un IP valido
+		}
+
 	
 		// Richiesta di continuare
 		cout << "Vuoi continuare con l'esecuzione del programma? (S/N)" << endl;
